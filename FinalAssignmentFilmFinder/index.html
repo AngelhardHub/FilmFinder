@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\styles.css"> 
+    <link rel="stylesheet" href="styles\stylesFilter.css"> 
+    <link rel="stylesheet" href="styles\stylesMovieContent.css">
+    <script defer src="scripts\filmList.js"></script>
+    <script defer src="scripts\getMoviesToTheScreen.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7c20ec8fa.js" crossorigin="anonymous"></script>
+    <title>Assignment: Film finder</title>
+</head>
+<body>
+    <nav class="navigationContainer">
+        <div class="searchFilter">   
+        <input type="text" class="searchbar" id="movieSearchBar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="filter">
+            <input type="radio" id="latest-movies" class="filterPreferences filterName" name="movieList" value="Latest-movies">
+            <label class="latestMovies">Latest movies, 2014 or newer</label>
+        </div>
+        <div class="filter">
+            <input type="radio" id="avenger" class="filterPreferences" name="movieList" value="Avengers">
+            <label class="filterName">Avengers movies</label>
+        </div>
+        <div class="filter">
+            <input type="radio" id="x-men" class="filterPreferences" name="movieList" value="X-Men">
+            <label class="filterName">X-Men movies</label>
+        </div>
+        <div class="filter">
+            <input type="radio" id="princess" class="filterPreferences" name="movieList" value="Princess">
+            <label class="filterName">Princess movies</label>
+        </div>
+        <div class="filter">
+            <input type="radio" id="batman" class="filterPreferences" name="movieList" value="Batman">
+            <label class="filterName">Batman movies</label>
+        </div>
+    </nav>
+    <div class="testContainer">
+        <div class="movieContentContainer">
+            <ul  id="movieListContainer" class="movieList">
+                
+            </ul>
+        </div>
+    </div>    
+</body>
+</html>

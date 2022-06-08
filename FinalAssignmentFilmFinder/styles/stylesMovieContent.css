@@ -1,0 +1,58 @@
+.testContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movieList {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movieList li {  
+    list-style: none;
+    width: 250px;  
+    height: 350px;  
+    background-color: #8cacea;  
+    margin: 20px;
+}
+
+.imgPoster {
+    width: 250px;
+    height: 350px;
+}
+
+@media (min-width: 600px) {
+    .movieContentContainer {
+        width: 1200px;
+        }
+    
+        .movieList li {  
+            width: 250px;  
+            height: 350px;  
+        }
+        
+        .imgPoster {
+            width: 250px;
+            height: 350px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+    .movieContentContainer {
+    width: 1200px;
+    }
+  
+    .movieList li {  
+        width: 250px;
+        height: 350px;
+    }
+    
+    .imgPoster {
+        width: 250px;
+        height: 350px;
+    }
+}

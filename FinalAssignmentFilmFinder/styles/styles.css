@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(85, 83, 83);
+    max-width: 480px;
+    min-width: 300px;
+}
+
+@media (min-width: 481px) {
+    body {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 1600px;
+    }
+}

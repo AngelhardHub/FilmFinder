@@ -1,0 +1,85 @@
+/* filter styling*/
+.navigationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter,
+.searchFilter {
+    color:rgb(230, 224, 224);
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.filter::after,
+.searchFilter::after {
+    position: absolute;
+    left: 0;
+    content: " ";
+    display: block;
+    border-top: 2px solid pink;
+    box-shadow: 3px 3px 12px pink;
+    width: 100%;
+}
+
+.searchFilter {
+    margin-top: 0;
+    color: rgb(46, 45, 45);
+}
+
+.searchFilter i{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: rgb(46, 45, 45);
+}
+
+.searchbar {
+    background: rgba(255, 192, 203, 0.795);
+    width: 91%;
+    height: 27px;
+    margin: 5px 0px;
+    margin-bottom: 10px;
+    font-family: 'Syne Mono', monospace;
+}
+
+input {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 30px;
+    accent-color: rgb(46, 45, 45);
+}
+
+@media (min-width: 600px) {
+    .filter,
+    .searchFilter,
+    .searchbar {
+        font-size: 2rem;
+    }
+
+    .searchbar {
+        height: 50px;
+        width: 91%;
+    }
+
+    .searchFilter i {
+        left: 15px;
+        top: 15px; 
+    }
+
+    input {
+        padding-left: 50px;  
+    }
+}
+
+@media (min-width: 1200px) {
+    .searchbar {
+        height: 50px;
+        width: 95%;
+    }
+}
